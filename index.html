@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+
+    <style>
+     .background{
+        background-image: url(/images/whiteFlower.avif);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+     }
+
+     .navigation{
+        width: 100%;
+        height:50px;
+        border: 2px solid rgb(253, 4, 100);
+        background-color: rgb(247, 76, 141);
+     }
+
+     .Form{
+        color: aliceblue;
+        padding-left: 20px;
+       
+        
+     }
+    
+     .Inputdiv{
+        border: 1px solid wheat;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 50px;
+        padding-top: 30px;
+        width: 200px;
+        
+     }
+     
+
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="background">
+      
+        <div class="navigation">
+           <h2 class="Form">Form</h2>
+          
+        </div>
+        
+        <div class="Inputdiv">
+
+            <Form action="file:///D:/WAD%20uni/2_HTML_Continue.pdf" method="post">
+              Firstname:  <input type="text" name="Firstname" value="" placeholder="Firstname" required ><br>
+
+              lastname:   <input type="text" name="lastname" value="" placeholder="lastname" required> <br>
+
+              email:      <input type="email" name="email" value="" placeholder="email address" required> <br>
+
+              password:   <input type="password" name="password" value="" placeholder="password"required> <br>
+
+              Gender: <br><input type="radio" name="gender" value="Female" required>Female
+                          <input type="radio" name="gender" value="Male">Male <br>
+
+              Age:     <input type="number" name="age" id="" placeholder="Age" required> <br>
+
+              Date of Birth: <input type="date" name="date" id="" required> <br>
+
+              Your Favrouit Fruit : <br> <input type="checkbox" name="mango" value="">Mangoes <br>
+                                    <input type="checkbox" name="Apple" value="">apple <br>
+                                    <input type="checkbox" name="Grapes"> Grapes <br>
+
+                city: <br> <select name="city" id="">
+                    <option value="skt">Sialkot</option>
+                    <option value="Lhr">Lahore</option>
+                     <option value="Karachi">Karachi</option>
+                </select>    <br>
+
+                File attachment : <input type="file" name="file" accept=".pdf,.doc,.docx">
+
+                Pic attachment : <input type="file" name="file" accept=".jpg,.png,.gif,image/jpeg,image/png">
+
+                <p>This is page 10</p>
+                <input type = "hidden" name = "pagename" value = "1" />
+
+                <input type="submit" name="submit" value="submit">
+                <input type="reset" name="reset" value="reset">
+                <input type="button" name="button" value="Sign in">
+            </Form> 
+
+        </div>
+
+       
+        
+
+        
+
+
+
+    </div>
+</body>
+</html>
